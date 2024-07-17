@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #131313;
+    height: 100vh;
+}
+
+/* estilização da pokédex */
+.pokedex{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-top: 10px;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(120deg,rgba(172, 32, 32), rgb(182, 69, 88));
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px; 
+    box-shadow: 0 0 25px rgb(168, 28, 28);
+    transition: .5s ease;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+.circulo-azul{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(84, 169, 202);
+    box-shadow: 0px 3px 2px #fff;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    animation: circuloAzul 2s linear infinite;
+}
+
+.janela-poke{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 230px;
+    background: #fff;
+    border-radius: 24px;
+    clip-path: polygon(39% );
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #131313;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.img__pokemon{
+    position: absolute;
+    margin-left: 115px;
+    padding-top: 40px;
+    width: 71px;
+    transition: .4s ease;
+}
+
+h5{
+    position: absolute;
+    text-align: center;
+    margin-left: 90px;
+    padding-top: 175px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #302c2c;
+}
+
+/* estilização de btns e forms */
+form{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+input{
+    box-shadow: 0 0 14px #131313;
+    border: none;
+}
+
+input, ::placeholder{
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    height: 60px;
+    background: #686060;
+    color:  #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.anterior__btn{
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #131313;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.anterior__btn:hover{
+    transform: scale(1.08);
+}
+
+.proximo__btn{
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px; 
+    font-size: 14px;
+    font-weight: 700;  
+    cursor: pointer; 
+    transition: .3s ease;
+}
+
+.proximo__btn:hover{
+    transform: scale(1.08);
+    background-color: #131313;
+    color: #fff;
+}
+
+
+/* animação */
+@keyframes circuloAzul {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
